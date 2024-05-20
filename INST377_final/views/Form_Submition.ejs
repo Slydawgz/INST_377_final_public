@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Site</title>
+    <!--Statics-->
+    <link rel="stylesheet" href="/Home.css">
+    <link rel="stylesheet" href="/About.css">
+    <link rel="stylesheet" href="/Button.css">
+    <link rel="stylesheet" href="/Anime_viewing.css">
+    <link rel="stylesheet" href="/Anime_details.css">
+    <link rel="stylesheet" href="/Help.css">
+    <style>
+        * {
+    font-family: 'Poppins', monospace; 
+}
+
+#headerSection, #footerSection{
+    background-color: #c1c1c1; 
+    text-align: center;
+}
+
+#headerSection {
+    padding: 10px;
+}
+
+#footerSection {
+    padding: 7px;
+    margin-top: 3%;;
+}
+
+#mainNav {
+    background-color: rgb(255, 255, 255);
+    text-align: right;
+    color: rgb(0, 0, 0);
+}
+
+#mainNav li {
+    display: inline-block;
+    position: relative;
+}
+
+#mainNav li:hover {
+    background-color: rgb(201, 212, 255);
+    color: rgb(0, 0, 0);
+}
+
+.animeImages {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    padding-bottom: 25%;
+}
+
+.example {
+    width: 100%;
+}
+/* P1 - main content*/
+.helpContent {
+    width: 63%;
+    float: left;
+    margin-top: 3px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+/* P1 - sub sectons in main content*/
+.sub-section {
+    background: #D3D3D3; /*#5681a0*/
+    position: relative;
+    height: 15%;
+    padding: 2%;
+    margin: 30px;
+}
+
+/* P1 - sidebar*/
+aside {
+    float: right;
+    width: 30%;
+    height: 40%;
+    background: #D3D3D3;
+    padding:15px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-right: 10px;
+    color:#0b0b0b ;
+    margin-top: 5px;
+}
+
+.sub-section img {
+    position: absolute;
+    bottom: 10;
+    right: 10;
+}
+
+h3 {
+    color: rgb(154, 43, 195);
+}
+
+#footerSection {
+    padding: 7px;
+    margin-top: 3%;;
+}
+
+.helpContainer {
+    width: 100%;
+    height:70%;
+}
+* {
+    font-family: 'Poppins', monospace; 
+}
+
+#mainNav {
+    background-color: rgb(255, 255, 255);
+    text-align: right;
+    color: rgb(0, 0, 0);
+}
+
+#mainNav li {
+    display: inline-block;
+    position: relative;
+}
+
+#mainNav li:hover {
+    background-color: rgb(201, 212, 255);
+    color: rgb(0, 0, 0);
+}
+
+.contentArea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduction {
+    background-color: rgb(210, 210, 210);
+    color:rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 25px;
+    
+}
+
+.solution {
+    background-color: rgb(210, 210, 210);
+    color:rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.encourage {
+    background-color: rgb(210, 210, 210);
+    color:rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+#headingColor {
+    color: rgb(154, 43, 195);
+}
+* {
+    font-family: 'Poppins', monospace; 
+}
+
+.characters {
+    margin: 0px;
+}
+
+.characters-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.character {
+    display: flex;
+    flex: 1 1 45%;
+    align-items: center;
+    margin: 25px;
+}
+
+.character img {
+    width: 200px;
+    height: 250px;
+    margin-right: 10px;
+}
+
+.character-details {
+    display: flex;
+    flex-direction: column;
+} 
+* {
+    font-family: 'Poppins', monospace; 
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.anime-item {
+    flex: 0 0 calc(20% - 20px); /* Adjust width as needed */
+    margin: 10px;
+    text-align: center;
+}
+
+.anime-item img {
+    max-width: 100%;
+    height: auto;
+}
+.anime-slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.anime-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.anime-images img {
+    width: 100%;
+    height: auto;
+}
+
+.button-86 {
+    all: unset;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    position: relative;
+    color: #f0f0f0;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-86::after,
+  .button-86::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -99999;
+    transition: all .4s;
+  }
+  
+  .button-86::before {
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 100%;
+    background: #28282d;
+    border-radius: 10px;
+  }
+  
+  .button-86::after {
+    transform: translate(10px, 10px);
+    width: 35px;
+    height: 35px;
+    background: #ffffff15;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 50px;
+  }
+  
+  .button-86:hover::before {
+    transform: translate(5%, 20%);
+    width: 110%;
+    height: 110%;
+  }
+  
+  .button-86:hover::after {
+    border-radius: 10px;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .button-86:active::after {
+    transition: 0s;
+    transform: translate(0, 5%);
+  }
+  
+  .button-65 {
+    appearance: none;
+    backface-visibility: hidden;
+    background-color: #2f80ed;
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    height: 50px;
+    letter-spacing: normal;
+    line-height: 1.5;
+    outline: none;
+    overflow: hidden;
+    padding: 14px 30px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+  }
+  
+  .button-65:hover {
+    background-color: #1366d6;
+    box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: .35s;
+  }
+  
+  .button-65:hover:after {
+    opacity: .5;
+  }
+  
+  .button-65:active {
+    box-shadow: rgba(0, 0, 0, .1) 0 3px 6px 0, rgba(0, 0, 0, .1) 0 0 10px 0, rgba(0, 0, 0, .1) 0 1px 4px -1px;
+    transform: translateY(2px);
+    transition-duration: .35s;
+  }
+  
+  .button-65:active:after {
+    opacity: 1;
+  }
+  
+  @media (min-width: 768px) {
+    .button-65 {
+      padding: 14px 22px;
+      width: 176px;
+    }
+  }
+    </style>
+    <!--Image Slider-->
+    <script src="https://rawgit.com/ruyadorno/simple-slider/master/dist/simpleslider.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header id="headerSection">
+        <h1 id="pageTitle">Anime Database </h1>
+    </header>
+
+    <!-- Navigation bar -->
+    <nav id="mainNav">
+        <ul>                   
+            <li><a href="/">Home</a></li> 
+            <li><a href="/about">About</a></li>
+            <li><a href="/help">Help</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <p>Thanks for sumbiting your concern please hit home in the nav bar to go back to the home screen.</p>
+
+            <!--Annyang Box-->
+            <div class="audio-navigation">
+                <br>
+                <h2>Enable your Mic to use our Audio Navigation feature!</h2>
+                <ul>
+                    <li>Load a Different Page</li>
+                        <ul>
+                            <li>Say: <strong>Navigate to [page]</strong></li>
+                            <li>Say: <strong>Search [anime]</strong> & then click the search button</li>
+                        </ul>
+                </ul>
+
+                <button onclick="startAnnyang()">Turn On Listening</button>
+                <button onclick="stopAnnyang()">Turn Off Listening</button>
+            </div>
+        
+
+        <!--Annyang Library-->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+        <script>
+            if(annyang) {
+                //Commands
+                var commands = {
+                    'Navigate to *page': changePage,
+                    'Search *anime': searchAnime
+                }
+
+                //Define functions
+                 function changePage(page) {
+                    if(page == 'home') {
+                        window.location.href = "Home.html"
+                    } else if (page == 'about') {
+                        window.location.href = "About.html"
+                    } else if (page == 'help') {
+                        window.location.href = "Help.html"
+                    } else if (page == 'contact us') {
+                        window.location.href = "Contact_us.html"
+                    }
+
+                }
+                 
+                //function to look up the name of the anime
+                function searchAnime(anime) {
+                    var searchBox = document.getElementById('id_query');
+                    if (searchBox) {
+                        searchBox.value = anime;
+                    } else {
+                        console.error('Search box element not found.');
+                    }
+                }
+
+                //Add command
+                annyang.addCommands(commands);
+
+                //Start listening
+                function startAnnyang() {
+                    annyang.start();
+                }
+
+                //Stop listening
+                function stopAnnyang() {
+                    annyang.abort();
+                }
+
+            }
+        </script>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footerSection">
+        <p>© 2024 Anime Database. All rights reserved. </p>
+    </footer>
+    <!-- Scripts -->
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            simpleslider.getSlider();
+        });
+    </script>
+</body>
+</html>
